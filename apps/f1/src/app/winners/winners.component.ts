@@ -14,14 +14,16 @@ export class WinnersComponent {
 
   ngOnInit() {
     //Fetching winners list fron service
-    this.service.getWinnersList().subscribe((data:any) => {
+    this.service.getWinnersList().subscribe((data: any) => {
       this.winners = JSON.parse(data).MRData.StandingsTable.StandingsLists;
+    }, error => {
+      alert("Error while fetching data" + error)
     })
   }
 
   //navigating to the races list of a perticular season and 
   // passing season and  winner name as params
   goToSeason(event: any) {
-    this.router.navigate(['seasons',event.season, event.DriverStandings[0].Driver.givenName])
+    this.router.navigate(['seasons', event.season, event.DriverStandings[0].Driver.givenName])
   }
 }

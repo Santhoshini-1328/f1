@@ -21,6 +21,8 @@ export class SeasonComponent {
     //Fetching the list of races from a season
     this.service.getRaces(this.season).subscribe((data: any) => {
       this.seasons = JSON.parse(data).MRData.RaceTable.Races;
-    })
+    },error => {
+      alert("Error while fetching data" + error)
+  })
   }
 }

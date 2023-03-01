@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { seasonsURL, winnersURL } from '../constants/constants';
 import { environment } from '../environment';
 
 @Injectable({
@@ -12,11 +13,12 @@ export class SharedService {
   //concatenate environment url
   // To get winners list by passing position 1 as parameter
   getWinnersList() {
-    return this.http.get(environment.apiBaseUrl+"driverStandings/1.json", {responseType: 'text'});
+    return this.http.get(winnersURL, {responseType: 'text'});
   }
 
   // To get Races list by passing year as parameter
   getRaces(year : string | null) {
-    return this.http.get(environment.apiBaseUrl+year+"/results/1.json", {responseType: 'text'})
+    const url = environment.apiBaseUrl+year+seasonsURL;
+    return this.http.get(url, {responseType: 'text'})
   }
 }
