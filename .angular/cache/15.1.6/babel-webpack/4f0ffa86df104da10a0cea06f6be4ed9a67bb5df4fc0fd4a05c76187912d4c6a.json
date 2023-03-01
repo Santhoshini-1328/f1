@@ -1,0 +1,1 @@
+{"ast":null,"code":"'use strict';\n\nrequire('./shim')();","map":{"version":3,"names":["require"],"sources":["C:/Users/Sunny/Downloads/f1/f1/node_modules/object.fromentries/auto.js"],"sourcesContent":["'use strict';\n\nrequire('./shim')();\n"],"mappings":"AAAA,YAAY;;AAEZA,OAAO,CAAC,QAAQ,CAAC,EAAE"},"metadata":{},"sourceType":"script","externalDependencies":[]}

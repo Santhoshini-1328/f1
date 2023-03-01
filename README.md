@@ -12,22 +12,27 @@ Run `nx serve F1` for a dev server. Navigate to http://localhost:4200/. The app 
 
 Run `nx graph` to see a diagram of the dependencies of the projects.
 
-storybook
-
 __________________
 
 Documentation:
 
 1. Created a NX workspace with an integrated angular APP.
 
-2.Created two components to list winners and races of that year and added routing to it.
+2. Created two components to list winners and races of that year and added routing to it.
 
 3. created cards UI in libs folder by nx g lib command.
 
-4.Created a service file to extract data from APIs and added two functions.
+4. Created a service file to extract data from APIs and added two functions.
 
 5. Retrieved the data in Components and loaded the Card UI.
 
-6.Highlighted winner card in season.
+6. Highlighted winner card in season.
 
 7. generate storybook configuration.
+
+ Run Storybook configuration to look our UI components with below commands.
+
+    nx g @nrwl/angular:storybook-configuration ui
+    nx run ui:storybook
+
+8. Documented everything in Readme.md file.    

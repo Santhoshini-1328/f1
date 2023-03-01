@@ -1,0 +1,1 @@
+{"ast":null,"code":"'use strict';\n\nrequire('./target/es5');","map":{"version":3,"names":["require"],"sources":["C:/Users/Sunny/Downloads/f1/f1/node_modules/airbnb-js-shims/index.js"],"sourcesContent":["'use strict';\n\nrequire('./target/es5');\n"],"mappings":"AAAA,YAAY;;AAEZA,OAAO,CAAC,cAAc,CAAC"},"metadata":{},"sourceType":"script","externalDependencies":[]}
