@@ -1,0 +1,6 @@
+<div class="header"><h1>F1 World Champions</h1></div>
+
+<div class="container" *ngFor="let item of winners" (click)="goToSeason(item)">
+    <f1-card [year]="item.season" [name]="item.DriverStandings[0].Driver.givenName + ' ' +item.DriverStandings[0].Driver.familyName"></f1-card>
+</div>
+

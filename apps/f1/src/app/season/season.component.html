@@ -1,0 +1,7 @@
+<div class="header"><h1>F1 Races List in {{season}}</h1></div>
+
+<div class="container" *ngFor="let item of seasons">
+    <f1-card [year]="item.raceName" 
+    [isChampion]="winner == item.Results[0].Driver.givenName" 
+    [name]="item.Results[0].Driver.givenName + ' ' +item.Results[0].Driver.familyName"></f1-card>
+</div>
