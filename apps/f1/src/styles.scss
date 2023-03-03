@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: $box-shadow;
+    margin: 50px;
+    padding: 40px;
+}
+
+.header {
+    background-color: darkslategrey;
+    color: #ffffff;
+    text-align: center;
+    padding: 1px;
+    box-shadow: $box-shadow;
+}

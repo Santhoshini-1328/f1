@@ -10,19 +10,19 @@ import { SharedService } from '../shared.service';
 export class SeasonComponent {
   seasons: any;
   winner: string | null = '';
-  season: string | null  = '';
+  season: string | null = '';
   constructor(private service: SharedService, private activatedRoute: ActivatedRoute) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     //Extrating year and winner details from url params
     this.season = this.activatedRoute.snapshot.paramMap.get('year');
     this.winner = this.activatedRoute.snapshot.paramMap.get('winner');
 
     //Fetching the list of races from a season
-    this.service.getRaces(this.season).subscribe((data: any) => {
+    this.service.getRaces(this.season).subscribe((data: string) => {
       this.seasons = JSON.parse(data).MRData.RaceTable.Races;
-    },error => {
+    }, (error: Error) => {
       alert("Error while fetching data" + error)
-  })
+    })
   }
 }

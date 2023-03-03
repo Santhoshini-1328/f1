@@ -12,11 +12,11 @@ export class WinnersComponent {
 
   constructor(private service: SharedService, private router: Router) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     //Fetching winners list fron service
-    this.service.getWinnersList().subscribe((data: any) => {
+    this.service.getWinnersList().subscribe((data: string) => {
       this.winners = JSON.parse(data).MRData.StandingsTable.StandingsLists;
-    }, error => {
+    }, (error: Error) => {
       alert("Error while fetching data" + error)
     })
   }
