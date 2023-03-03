@@ -1,37 +1,23 @@
-$box-border: 0 4px 8px 0 rgba(0,0,0,0.2);
-.badge{
-    padding-left : 13px;
-    border-radius: 8px;
-    background: cadetblue;
-}
+
+
 .card {
-    box-shadow: $box-border;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    height:200px;
-    width: 600px;
+    height:100px;
+    width: 200px;
     padding: 2px 16px;
     margin  : 10px;
     margin-left: 20%;
-    border-left: 8px solid #FF8C00;
-    background-color: aliceblue;
+    background-color: white;
+    border-radius: 10px;
 }
 .card:hover {
-    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
-     
+    box-shadow: 0 1px 0px 0 rgba(0,0,0,0.2);
+    
   }
 .champion {
     border-left: 8px solid #198754;
     background-color: #89e0b5;
-}
-.season{
-    height: 40px;
-    width: 200px;
-    line-height: 40px;
-    @extend .badge;
-}
-.driver{
-    height: 40px;
-    width: 320px;
-    @extend .badge;
 }
 

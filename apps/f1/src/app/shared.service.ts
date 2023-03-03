@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { seasonsURL, winnersURL } from '../constants/constants';
 import { environment } from '../environment';
-import { winnerResponse } from '../interfaces/interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -18,12 +17,12 @@ export class SharedService {
 
   //concatenate environment url
   // To get winners list by passing position 1 as parameter
-  getWinnersList(): any {
+  getWinnersList(): Observable<string> {
     return this.http.get(winnersURL, {responseType: 'text'});
   }
 
   // To get Races list by passing year as parameter
-  getRaces(year : string | null): any {
+  getRaces(year : string): Observable<string> {
     const url = environment.apiBaseUrl+year+seasonsURL;
     return this.http.get(url, {responseType: 'text'})
   }

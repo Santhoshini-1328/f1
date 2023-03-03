@@ -5,19 +5,20 @@ $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 * {
     box-sizing: border-box;
 }
-
+.container_header h3{
+    margin-left: 45px;
+}
 .container {
     display: flex;
-    flex-direction: column;
-    box-shadow: $box-shadow;
-    margin: 50px;
-    padding: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-
 .header {
     background-color: darkslategrey;
     color: #ffffff;
-    text-align: center;
-    padding: 1px;
     box-shadow: $box-shadow;
+    h1{
+    margin-left: 35px;
+    padding: 6px;
+    }
 }
