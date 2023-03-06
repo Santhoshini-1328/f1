@@ -16,6 +16,7 @@ export class WinnersComponent {
   ngOnInit(): void {
     //Fetching winners list fron service
     this.service.getWinnersList().subscribe((data: string) => {
+      console.log(data);
       this.winners = JSON.parse(data).MRData.StandingsTable.StandingsLists;
     })
   }

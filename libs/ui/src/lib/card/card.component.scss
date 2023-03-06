@@ -2,7 +2,6 @@
 
 .card {
     border: 1px solid #ddd;
-    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     height:100px;
     width: 200px;
@@ -13,11 +12,7 @@
     border-radius: 10px;
 }
 .card:hover {
-    box-shadow: 0 1px 0px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.2);
     
   }
-.champion {
-    border-left: 8px solid #198754;
-    background-color: #89e0b5;
-}
 

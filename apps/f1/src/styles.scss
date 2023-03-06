@@ -14,11 +14,18 @@ $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
 }
 .header {
-    background-color: darkslategrey;
+    background-color: #e60000;
     color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     box-shadow: $box-shadow;
-    h1{
+    img{
     margin-left: 35px;
-    padding: 6px;
     }
+}
+img{
+    height: 50px;
+    width: 80px;
+    margin-top: 8px;
 }
